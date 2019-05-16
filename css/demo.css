@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/*头部*/
+header {
+  width: 1180px;
+  height: 70px;
+  margin: auto;
+}
+header .logo {
+  width: 285px;
+  height: 70px;
+  background: url("../img/logo.png");
+  background-position: 0 -10px;
+  float: left;
+}
+header img {
+  width: 810px;
+  height: 70px;
+  float: right;
+}
+/*导航*/
+.box {
+  height: 40px;
+  background: #3b8de3;
+}
+.box .con {
+  width: 1180px;
+  height: 100%;
+  margin: auto;
+  position: relative;left: 0;top: 0;
+}
+.box .con .left {
+  width: 690px;
+  height: 100%;
+  float: left;
+}
+.box .con .right {
+  width: 240px;
+  height: 100%;
+  float: right;
+  background-image: url("../img/img.png");
+  background-position: -315px -500px;
+  background-repeat: no-repeat;
+}
+.box a {
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  text-decoration: none;
+}
+.box .con .left a {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+.box .con .right a {
+  float: right;
+  width: 30%;
+  height: 100%;
+}
+.box .con .left a:hover {
+  color: #3b8de3;
+  background: #fff;
+  border-top: 1px solid orange;
+}
+.box .con .sanjiao {
+  width: 0;height: 0;
+  border-top: 10px solid #fff;
+  border-left: 5px solid #3b8de3;
+  border-right: 5px solid #3b8de3;
+  position: absolute;
+  right: 5px;
+  top: 15px;
+}
+/*热门城市*/
+.hot_city {
+  width: 1180px;
+  margin: auto;
+  padding: 5px;
+  font-size: 12px;
+}
+.hot_city span {
+  float: left;
+}
+.hot_city a {
+  float: left;
+  margin: 0 5px;
+  color: #3b8de3;
+  text-decoration: none;
+}
+
+/*轮播图*/
+.spells {
+  height: 380px;
+  position: relative;
+  left: 0;
+  top: 15px;
+}
+.spells .img1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../img/spell01.png") no-repeat center;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.spells .img2 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/spell02.png") no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.spells .btns {
+  width: 140px;
+  height: 15px;
+  position: absolute;
+  right: 100px;
+  bottom: 20px;
+  z-index: 3;
+}
+.spells .btn1 {
+  width: 60px;
+  height: 15px;
+  float: left;
+  background-color: #000;
+}
+.spells .btn2 {
+  width: 60px;
+  height: 15px;
+  float: right;
+  background-color: #000;
+}
+
+/*热门航线预定*/
+.mod-hd {
+  width: 1180px;
+  height: 42px;
+  border: 1px solid red;
+  margin: 50px auto;
+}
+.mod-hd .left {
+  float: left;
+  border: 1px solid red;
+  font-size: 30px;
+  color: #555;
+}
+.mod-hd .right {
+  float: right;
+  border: 1px solid red;
+  line-height: 40px;
+  font-size: 20px;
+}
+.mod-hd .right a {
+  float: left;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #555;
+}
+.mod-hd .right a:hover {
+  color: #3b8de3;
+}
+.mod-hd-list {
+  width: 1180px;
+  margin: -30px auto 0;
+  overflow: hidden;
+}
+.mod-hd-list .out {
+  width: 19%;
+  height: 140px;
+  border: 1px solid blue;
+  float: left;
+  margin: 5px 4px;
+}
+.mod-hd-list .ncoach_name {
+  width: 220px;
+  height: 45px;
+  border: 1px solid red;
+}
+.mod-hd-list .nocach_data {
+  width: 220px;
+  height: 21px;
+  border: 1px solid green;
+}
+.mod-hd-list .nocach_type {
+  width: 220px;
+  height: 68px;
+  border: 1px solid blue;
+}

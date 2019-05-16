@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="./css/demo.css">
+  <script type="text/javascript">
+    window.onload = function () {
+      var imgs = document.getElementsByClassName("img");
+      var btns = document.getElementsByClassName("btn");
+      console.log("img",imgs.length)
+      var count = 0;
+      setInterval(function () {
+        count++;
+        if (count == 2) {
+          count = 0;
+        }
+        for (var i = 0; i < imgs.length; i++) {
+          imgs[i].style.visibility="hidden";
+          btns[i].style.cssText="background-color: #000"
+        }
+        imgs[count].style.visibility="visible";
+        btns[count].style.cssText="background-color:orange";
+        console.log(count);
+      },3000);
+    }
+
+  </script>
+</head>
+<body>
+<!-- 头部 -->
+  <header>
+    <div class="logo"></div>
+    <img src="./img/header.jpg" alt="">
+  </header>
+<!--  导航 -->
+  <div class="box">
+    <div class="con">
+      <div class="left">
+        <a href="">首页</a>
+        <a href="">国内机票</a>
+        <a href="">国际机票</a>
+        <a href="">民航资讯</a>
+        <a href="">民航问答</a>
+      </div>
+      <div class="right">
+        <a href="">登录</a>
+        <a href="">注册</a>
+        <a href="">用户中心</a>
+      </div>
+      <div class="sanjiao"></div>
+    </div>
+  </div>
+<!-- 热门城市 -->
+  <div class="hot_city">
+    <span>热门城市：</span>
+    <a href="">深圳</a>
+    <a href="">北京</a>
+    <a href="">上海</a>
+    <a href="">广州</a>
+    <a href="">南京</a>
+    <a href="">天津</a>
+    <a href="">武汉</a>
+    <a href="">长沙</a>
+    <a href="">昆明</a>
+    <a href="">贵阳</a>
+    <a href="">成都</a>
+    <a href="">重庆</a>
+    <a href="">海口</a>
+    <a href="">哈尔滨</a>
+    <a href="">更多</a>
+  </div>
+<!-- 轮播图 -->
+  <div class="spells">
+    <div class="img1 img"></div>
+    <div class="img2 img"></div>
+    <div class="btns">
+      <div class="btn1 btn"></div>
+      <div class="btn2 btn" style="background-color: orange"></div>
+    </div>
+  </div>
+<!-- 热门航线预定 -->
+  <div class="mod-hd">
+    <div class="left"><span>热门航线预订</span></div>
+    <div class="right">
+      <a href="">全国</a>
+      <a href="">深圳</a>
+      <a href="">北京</a>
+      <a href="">上海</a>
+      <a href="">广州</a>
+      <a href="">武汉</a>
+      <a href="">成都</a>
+      <a href="">海口</a>
+      <a href="">重庆</a>
+      <a href="">沈阳</a>
+    </div>
+  </div>
+  <div class="mod-hd-list">
+    <div class="out">
+      <div class="ncoach_name">
+        <span class="ncoach_name_start"></span>
+        <i class="ncoach_name_arrow"></i>
+        <span class="ncoach_name_end"></span>
+      </div>
+      <div class="nocach_data"></div>
+      <div class="nocach_type">
+        <i class="nocach_type_bus"></i>
+        <span class="nocach_type_t1"></span>
+        <span class="nocach_type_t2"></span>
+        <span class="nocach_type_t3"></span>
+      </div>
+    </div>
+    <div class="out">
+      <div class="ncoach_name">
+        <span class="ncoach_name_start"></span>
+        <i class="ncoach_name_arrow"></i>
+        <span class="ncoach_name_end"></span>
+      </div>
+      <div class="nocach_data"></div>
+      <div class="nocach_type">
+        <i class="nocach_type_bus"></i>
+        <span class="nocach_type_t1"></span>
+        <span class="nocach_type_t2"></span>
+        <span class="nocach_type_t3"></span>
+      </div>
+    </div>
+    <div class="out">
+      <div class="ncoach_name">
+        <span class="ncoach_name_start"></span>
+        <i class="ncoach_name_arrow"></i>
+        <span class="ncoach_name_end"></span>
+      </div>
+      <div class="nocach_data"></div>
+      <div class="nocach_type">
+        <i class="nocach_type_bus"></i>
+        <span class="nocach_type_t1"></span>
+        <span class="nocach_type_t2"></span>
+        <span class="nocach_type_t3"></span>
+      </div>
+    </div>
+    <div class="out">
+      <div class="ncoach_name">
+        <span class="ncoach_name_start"></span>
+        <i class="ncoach_name_arrow"></i>
+        <span class="ncoach_name_end"></span>
+      </div>
+      <div class="nocach_data"></div>
+      <div class="nocach_type">
+        <i class="nocach_type_bus"></i>
+        <span class="nocach_type_t1"></span>
+        <span class="nocach_type_t2"></span>
+        <span class="nocach_type_t3"></span>
+      </div>
+    </div>
+    <div class="out">
+      <div class="ncoach_name">
+        <span class="ncoach_name_start"></span>
+        <i class="ncoach_name_arrow"></i>
+        <span class="ncoach_name_end"></span>
+      </div>
+      <div class="nocach_data"></div>
+      <div class="nocach_type">
+        <i class="nocach_type_bus"></i>
+        <span class="nocach_type_t1"></span>
+        <span class="nocach_type_t2"></span>
+        <span class="nocach_type_t3"></span>
+      </div>
+    </div>
+    <div class="out">
+      <div class="ncoach_name">
+        <span class="ncoach_name_start"></span>
+        <i class="ncoach_name_arrow"></i>
+        <span class="ncoach_name_end"></span>
+      </div>
+      <div class="nocach_data"></div>
+      <div class="nocach_type">
+        <i class="nocach_type_bus"></i>
+        <span class="nocach_type_t1"></span>
+        <span class="nocach_type_t2"></span>
+        <span class="nocach_type_t3"></span>
+      </div>
+    </div>
+    <div class="out">
+      <div class="ncoach_name">
+        <span class="ncoach_name_start"></span>
+        <i class="ncoach_name_arrow"></i>
+        <span class="ncoach_name_end"></span>
+      </div>
+      <div class="nocach_data"></div>
+      <div class="nocach_type">
+        <i class="nocach_type_bus"></i>
+        <span class="nocach_type_t1"></span>
+        <span class="nocach_type_t2"></span>
+        <span class="nocach_type_t3"></span>
+      </div>
+    </div>
+    <div class="out">
+      <div class="ncoach_name">
+        <span class="ncoach_name_start"></span>
+        <i class="ncoach_name_arrow"></i>
+        <span class="ncoach_name_end"></span>
+      </div>
+      <div class="nocach_data"></div>
+      <div class="nocach_type">
+        <i class="nocach_type_bus"></i>
+        <span class="nocach_type_t1"></span>
+        <span class="nocach_type_t2"></span>
+        <span class="nocach_type_t3"></span>
+      </div>
+    </div>
+    <div class="out">
+      <div class="ncoach_name">
+        <span class="ncoach_name_start"></span>
+        <i class="ncoach_name_arrow"></i>
+        <span class="ncoach_name_end"></span>
+      </div>
+      <div class="nocach_data"></div>
+      <div class="nocach_type">
+        <i class="nocach_type_bus"></i>
+        <span class="nocach_type_t1"></span>
+        <span class="nocach_type_t2"></span>
+        <span class="nocach_type_t3"></span>
+      </div>
+    </div>
+    <div class="out">
+      <div class="ncoach_name">
+        <span class="ncoach_name_start"></span>
+        <i class="ncoach_name_arrow"></i>
+        <span class="ncoach_name_end"></span>
+      </div>
+      <div class="nocach_data"></div>
+      <div class="nocach_type">
+        <i class="nocach_type_bus"></i>
+        <span class="nocach_type_t1"></span>
+        <span class="nocach_type_t2"></span>
+        <span class="nocach_type_t3"></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
